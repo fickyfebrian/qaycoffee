@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "name": "Qay Bandung",
+    "hours": "6 AM - 11  PM",
+    "address": "Jl.  Raya Bandung",
+    "image": "https://images.unsplash.com/photo-1525610553991-2bede1a236e2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 2,
+    "name": "Qay Jakarta",
+    "hours": "24 Hours",
+    "address": "Jl.  Raya Jakarta",
+    "image": "https://images.unsplash.com/photo-1529022805552-1c88a713c1c5?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 3,
+    "name": "Qay Surabaya",
+    "hours": "6 AM - 11  PM",
+    "address": "Jl.  Raya Surabaya",
+    "image": "https://images.unsplash.com/photo-1494346480775-936a9f0d0877?q=80&w=2016&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 4,
+    "name": "Qay DI Yogyakarta",
+    "hours": "6 AM - 11  PM",
+    "address": "Jl.  Raya Yogyakarta",
+    "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=2047&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 5,
+    "name": "Qay Bali",
+    "hours": "24 Hours",
+    "address": "Jl.  Raya Bali",
+    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 6,
+    "name": "Qay Semarang",
+    "hours": "10 AM - 10 PM",
+    "address": "Jl.  Raya Semarang",
+    "image": "https://images.unsplash.com/photo-1521017432531-fbd92d768814?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  }
+
+]
