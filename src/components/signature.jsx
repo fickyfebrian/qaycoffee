@@ -1,48 +1,67 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 export default function Signature() {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
+  const convertToIDR = (usdPrice) => {
+    // Kurs ini sebaiknya diperbarui secara berkala atau diambil dari API kurs mata uang
+    const exchangeRate = 15000; // Contoh kurs: 1 USD = 15000 IDR
+    return usdPrice * exchangeRate;
+  };
 
   useEffect(() => {
     fetch("https://fake-coffee-api.vercel.app/api")
       .then((res) => {
         if (!res.ok) {
-          throw new Error('Network response was not ok');
+          throw new Error("Network response was not ok");
         }
         return res.json();
       })
       .then((data) => {
-        setData(data.products || []); // Assuming 'products' is an array in the response
+        setData(data); // The API returns an array directly, so we don't need to access a 'products' property
       })
       .catch((error) => setError(error.message));
   }, []);
+
   if (error) {
     return <div>Error: {error}</div>;
   }
 
-  if (!data || data.length === 0) {
-    return <div>Loading...</div>; // Show loading state if data is still empty
+  if (!data) {
+    return <div>Loading...</div>;
   }
 
-
   return (
-    <div className="flex justify-center px-12 py-12 ">
-      <div className="font-playfair text-6xl">
-        Signature
-      </div>
-      {data.map((item, index) => (
-          <div key={index} className="p-4 bg-white shadow-lg rounded-lg">
+    <div className="container mx-auto px-4 py-8">
+      <h1 className="font-playfair text-6xl text-center mb-8">
+        Signature Coffee
+      </h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-12">
+        {data.map((coffee) => (
+          <div
+            key={coffee.id}
+            className="bg-transparent shadow-lg rounded-lg overflow-hidden"
+          >
             <img
-              src={item.image_url}
-              alt={item.name}
-              className="w-full h-64 object-cover rounded-lg mb-4"
+              src={coffee.image_url}
+              alt={coffee.name}
+              className="w-full h-2/4 object-contain bg-white blur-0 transition-transform duration-300 ease-in-out transform hover:scale-150 md:transform-none scale-100"
             />
-            <h2 className="font-semibold text-xl">{item.name}</h2>
-            <p className="text-gray-700">Price: ${item.price}</p>
-            <p className="text-gray-500">Flavor Profile: {item.flavor_profile}</p>
+            <div className="p-4">
+              <h2 className="font-poppins font-semibold text-2xl mb-4">
+                {coffee.name}
+              </h2>
+              <p>{convertToIDR(coffee.price).toLocaleString('id-ID', { style: 'currency', currency: 'IDR' })}</p>
+              <p className=" font-poppins text-white">
+                {coffee.region}
+              </p>
+              <p className=" font-poppins text-white">
+                {coffee.weight} gram
+              </p>
+            </div>
           </div>
         ))}
+      </div>
     </div>
   );
 }

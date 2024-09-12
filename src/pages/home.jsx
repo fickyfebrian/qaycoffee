@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Signature from '../components/signature';
+import ShopDirection from '../components/shopDirection';
 
 export default function Home() {
   const [data, setData] = useState([]);
@@ -12,8 +13,9 @@ export default function Home() {
   }, []);
 
   return (
+    <div>
     <div className="container mx-auto pt-40">
-      <div className="grid grid-cols-2 gap-4 md:grid-cols-3 sm:grid-cols-1">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-3 sm:grid-cols-1">
         {data.map((shop) => (
           <div key={shop.id} className="bg-transparent rounded-lg shadow-md p-4">
             <img src={shop.image} alt="Foto Cofeeshop" className="object-cover w-full h-96 mb-4" />
@@ -26,6 +28,8 @@ export default function Home() {
         ))}
       </div>
       <Signature />
+    </div>
+    <ShopDirection />
     </div>
   );
 }
