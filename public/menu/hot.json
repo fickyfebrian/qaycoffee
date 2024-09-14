@@ -1,0 +1,85 @@
+{
+    "category": "Hot",
+    "items": [
+      {
+        "name": "Hot Tea",
+        "description": "A soothing cup of hot tea. [Black/ Green/ Earl Grey/ Chamomile]",
+        "price": "30"
+      },
+      {
+        "name": "Cappuccino",
+        "description": "Classic espresso-based drink with steamed milk and foam.",
+        "price": "40"
+      },
+      {
+        "name": "Latte",
+        "description": "Espresso with steamed milk.",
+        "price": "35"
+      },
+      {
+        "name": "Mocha",
+        "description": "Espresso, chocolate, and steamed milk.",
+        "price": "45"
+      },
+      {
+        "name": "Americano",
+        "description": "Espresso diluted with hot water.",
+        "price": "30"
+      },
+      {
+        "name": "Hot Chocolate",
+        "description": "Rich, creamy hot chocolate.",
+        "price": "35"
+      },
+      {
+        "name": "Chai Latte",
+        "description": "Spiced tea with steamed milk.",
+        "price": "40"
+      },
+      {
+        "name": "Matcha Latte",
+        "description": "Green tea powder whisked with hot water and steamed milk.",
+        "price": "45"
+      },
+      {
+        "name": "Golden Milk",
+        "description": "Turmeric latte with ginger and other spices.",
+        "price": "50"
+      },
+      {
+        "name": "Espresso",
+        "description": "Strong, concentrated coffee.",
+        "price": "25"
+      },
+      {
+        "name": "Macchiato",
+        "description": "Espresso with a dollop of foamed milk.",
+        "price": "30"
+      },
+      {
+        "name": "Flat White",
+        "description": "Strong espresso with microfoam.",
+        "price": "35"
+      },
+      {
+        "name": "Vienna Coffee",
+        "description": "Espresso with whipped cream.",
+        "price": "40"
+      },
+      {
+        "name": "Irish Coffee",
+        "description": "Hot coffee with Irish whiskey, sugar, and whipped cream.",
+        "price": "55"
+      },
+      {
+        "name": "Hot Toddy",
+        "description": "Warm drink with whiskey, honey, lemon, and spices.",
+        "price": "45"
+      },
+      {
+        "name": "Mulled Wine",
+        "description": "Spiced red wine, perfect for cold weather.",
+        "price": "50"
+      }
+    ]
+  }
