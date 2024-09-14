@@ -1,0 +1,135 @@
+{
+    "categories": [
+      {
+        "category": "Cold",
+        "items": [
+          {
+            "name": "Ice Koffie",
+            "description": "Black Mist",
+            "price": "60"
+          },
+          {
+            "name": "Cold Brew",
+            "description": "Black Mist",
+            "price": "60"
+          },
+          {
+            "name": "Ice Latte",
+            "description": "Brown Cow [Classic/ Caramel/ Mocha]",
+            "price": "55 / 60"
+          },
+          {
+            "name": "Ice Cappucino",
+            "description": "Brown Cow",
+            "price": "55"
+          },
+          {
+            "name": "Sparkling Koffie",
+            "description": "Black Mist",
+            "price": "60"
+          }
+        ]
+      },
+      {
+        "category": "Hot",
+        "items": [
+          {
+            "name": "Hot Cappuccino",
+            "description": "Brown Cow",
+            "price": "50"
+          },
+          {
+            "name": "Hot Latte",
+            "description": "Brown Cow [Classic/ Caramel/ Mocha]",
+            "price": "50"
+          }
+        ]
+      },
+      {
+        "category": "Tea",
+        "items": [
+          {
+            "name": "Green Tea",
+            "description": "Fresh Leaves",
+            "price": "40"
+          },
+          {
+            "name": "Black Tea",
+            "description": "Strong Brew",
+            "price": "35"
+          }
+        ]
+      },
+      {
+        "category": "Sparkling",
+        "items": [
+          {
+            "name": "Sparkling Water",
+            "description": "Lemon Flavor",
+            "price": "30"
+          }
+        ]
+      },
+      {
+        "category": "Mocktail",
+        "items": [
+          {
+            "name": "Virgin Mojito",
+            "description": "Lime and Mint",
+            "price": "55"
+          }
+        ]
+      },
+      {
+        "category": "Dessert",
+        "items": [
+          {
+            "name": "Chocolate Cake",
+            "description": "Rich and Creamy",
+            "price": "45"
+          }
+        ]
+      },
+      {
+        "category": "Beverage",
+        "items": [
+          {
+            "name": "Orange Juice",
+            "description": "Freshly Squeezed",
+            "price": "25"
+          }
+        ]
+      },
+      {
+        "category": "Indonesian",
+        "items": [
+          {
+            "name": "Nasi Goreng",
+            "description": "Fried Rice with Chicken",
+            "price": "35"
+          }
+        ]
+      },
+      {
+        "category": "Western",
+        "items": [
+          {
+            "name": "Pasta Carbonara",
+            "description": "Creamy Sauce with Bacon",
+            "price": "50"
+          }
+        ]
+      },
+      {
+        "category": "Steak",
+        "items": [
+          {
+            "name": "Ribeye Steak",
+            "description": "Juicy and Tender",
+            "price": "120"
+          }
+        ]
+      }
+    ]
+  }
+  

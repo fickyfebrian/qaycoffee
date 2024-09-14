@@ -18,7 +18,7 @@ export default function Carousel() {
   }, []);
 
   return (
-    <div className="pt-24">
+    <div className="pt-0">
       {images.length > 0 ? (
         <Swiper
           spaceBetween={50}
@@ -31,7 +31,7 @@ export default function Carousel() {
         >
           {images.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="w-full h-[520px] sm:h-[400px] md:h-[550px] lg:h-[1000px] flex justify-center items-center overflow-hidden">
+              <div className="w-full h-[520px] sm:h-[400px] md:h-[550px] lg:h-[950px] flex justify-center items-center overflow-hidden">
                 <img
                   src={item.image}
                   alt={`Slide ${index}`}

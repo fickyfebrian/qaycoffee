@@ -4,6 +4,7 @@ export default function Navbar() {
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false); // State untuk mengatur warna background navbar
 
   const controlNavbar = () => {
     if (typeof window !== 'undefined') {
@@ -13,6 +14,9 @@ export default function Navbar() {
         setShowNavbar(true);
       }
       setLastScrollY(window.scrollY);
+
+      // Set isScrolled berdasarkan posisi scroll
+      setIsScrolled(window.scrollY > 0);
     }
   };
 
@@ -36,14 +40,14 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`fixed w-full top-0 left-0 z-40 bg-transparent shadow-md transition-transform duration-300 ${
+        className={`fixed w-full top-0 left-0 z-40 transition-transform duration-300 ${
           showNavbar ? 'transform translate-y-0' : 'transform -translate-y-full'
-        }`}
+        } ${isScrolled ? 'bg-black' : 'bg-transparent'}`} // Berubah dari transparent ke hitam
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-32">
             <div className="">
-              <a className="text-4xl font-playfair" href="/">
+              <a className="text-4xl font-playfair text-white" href="/">
                 Qaycoffee
               </a>
             </div>

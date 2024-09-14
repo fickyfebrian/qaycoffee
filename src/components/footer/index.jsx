@@ -66,6 +66,11 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      <div className="mt-4 border-t border-gray-300 pt-4 w-full flex flex-col items-center">
+        <a href="#" className="text-l text-white">
+          Copyright © 2024 Qaycoffee. All Rights Reserved
+        </a>
+      </div>
     </footer>
   );
 }

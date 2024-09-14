@@ -1,0 +1,85 @@
+{
+    "category": "Cold",
+    "items": [
+      {
+        "name": "Ice Koffie",
+        "description": "Black Mist",
+        "price": "60"
+      },
+      {
+        "name": "Cold Brew",
+        "description": "Black Mist",
+        "price": "60"
+      },
+      {
+        "name": "Ice Latte",
+        "description": "Brown Cow [Classic/ Caramel/ Mocha]",
+        "price": "55 / 60"
+      },
+      {
+        "name": "Ice Cappucino",
+        "description": "Brown Cow",
+        "price": "55"
+      },
+      {
+        "name": "Sparkling Koffie",
+        "description": "Black Mist",
+        "price": "60"
+      },
+      {
+        "name": "Iced Americano",
+        "description": "Black Mist",
+        "price": "50"
+      },
+      {
+        "name": "Iced Mocha",
+        "description": "Brown Cow with chocolate syrup",
+        "price": "65"
+      },
+      {
+        "name": "Iced Caramel Latte",
+        "description": "Brown Cow with caramel syrup",
+        "price": "65"
+      },
+      {
+        "name": "Iced Lavender Latte",
+        "description": "Brown Cow with lavender syrup",
+        "price": "70"
+      },
+      {
+        "name": "Iced Hazelnut Latte",
+        "description": "Brown Cow with hazelnut syrup",
+        "price": "70"
+      },
+      {
+        "name": "Iced Matcha Latte",
+        "description": "Green tea latte",
+        "price": "75"
+      },
+      {
+        "name": "Iced Taro Latte",
+        "description": "Purple yam latte",
+        "price": "75"
+      },
+      {
+        "name": "Iced Red Velvet Latte",
+        "description": "Red velvet cake-inspired latte",
+        "price": "80"
+      },
+      {
+        "name": "Iced Salted Caramel Latte",
+        "description": "Brown Cow with salted caramel syrup",
+        "price": "75"
+      },
+      {
+        "name": "Iced Dalgona Coffee",
+        "description": "Whipped coffee with milk",
+        "price": "85"
+      },
+      {
+        "name": "Iced Cinnamon Latte",
+        "description": "Brown Cow with cinnamon syrup",
+        "price": "70"
+      }
+    ]
+  }
