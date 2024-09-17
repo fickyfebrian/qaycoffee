@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import Signature from "../components/signature";
-import ShopDirection from "../components/shopDirection";
+import Signature from "../components/home/signature";
+import ShopDirection from "../components/home/shopDirection";
 import Carousel from "../components/carousel";
+import Story from "../components/home/story";
 
 export default function Home() {
   const [data, setData] = useState([]);
@@ -22,6 +23,7 @@ export default function Home() {
       className="w-auto"
     >
       <Carousel />
+      <Story />
       <div className="container mx-auto pt-20">
         <motion.div
           className="grid grid-cols-1 gap-4 md:grid-cols-3 sm:grid-cols-1"

@@ -1,0 +1,45 @@
+{
+    "category": "Cocktails",
+    "items": [
+      {
+        "name": "Espresso Martini",
+        "description": "Vodka, coffee liqueur, espresso",
+        "price": "80"
+      },
+      {
+        "name": "Irish Coffee",
+        "description": "Whiskey, coffee, sugar, whipped cream",
+        "price": "85"
+      },
+      {
+        "name": "Tequila Sunrise",
+        "description": "Tequila, orange juice, grenadine",
+        "price": "75"
+      },
+      {
+        "name": "Margarita",
+        "description": "Tequila, lime juice, triple sec, salt rim",
+        "price": "70"
+      },
+      {
+        "name": "Mojito",
+        "description": "Rum, lime juice, mint, sugar, soda water",
+        "price": "75"
+      },
+      {
+        "name": "Daiquiri",
+        "description": "Rum, lime juice, sugar",
+        "price": "70"
+      },
+      {
+        "name": "Old Fashioned",
+        "description": "Whiskey, bitters, sugar, orange peel",
+        "price": "80"
+      },
+      {
+        "name": "Manhattan",
+        "description": "Whiskey, sweet vermouth, bitters",
+        "price": "80"
+      }
+    ]
+  }

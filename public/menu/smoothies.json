@@ -1,0 +1,30 @@
+  {
+    "category": "Smoothies",
+    "items": [
+      {
+        "name": "Tropical Fruit Smoothie",
+        "description": "Blend of mango, pineapple, and banana",
+        "price": "45"
+      },
+      {
+        "name": "Berry Blast Smoothie",
+        "description": "Blend of strawberry, raspberry, and blueberry",
+        "price": "45"
+      },
+      {
+        "name": "Green Superfood Smoothie",
+        "description": "Blend of spinach, kale, avocado, and apple",
+        "price": "50"
+      },
+      {
+        "name": "Chocolate Peanut Butter Smoothie",
+        "description": "Blend of chocolate, peanut butter, and banana",
+        "price": "55"
+      },
+      {
+        "name": "Mango Tango Smoothie",
+        "description": "Blend of mango, yogurt, and honey",
+        "price": "45"
+      }
+    ]
+  }

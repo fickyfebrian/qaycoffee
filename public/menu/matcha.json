@@ -1,0 +1,30 @@
+{
+    "category": "Matcha Series",
+    "items": [
+      {
+        "name": "Matcha Latte",
+        "description": "Creamy matcha green tea latte",
+        "price": "55"
+      },
+      {
+        "name": "Matcha Espresso",
+        "description": "Espresso topped with a layer of matcha foam",
+        "price": "60"
+      },
+      {
+        "name": "Matcha Affogato",
+        "description": "Espresso poured over a scoop of matcha ice cream",
+        "price": "65"
+      },
+      {
+        "name": "Matcha Smoothie",
+        "description": "Blended matcha green tea with milk and ice",
+        "price": "50"
+      },
+      {
+        "name": "Matcha Latte with Boba",
+        "description": "Matcha latte with chewy tapioca pearls",
+        "price": "60"
+      }
+    ]
+  }

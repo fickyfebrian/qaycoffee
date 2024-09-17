@@ -51,13 +51,20 @@ export default function Signature() {
               <h2 className="font-poppins font-semibold text-2xl mb-4">
                 {coffee.name}
               </h2>
-              <p>{convertToIDR(coffee.price).toLocaleString('id-ID', { style: 'currency', currency: 'IDR' })}</p>
-              <p className=" font-poppins text-white">
-                {coffee.region}
+              <p>
+                {convertToIDR(coffee.price).toLocaleString("id-ID", {
+                  style: "currency",
+                  currency: "IDR",
+                })}
               </p>
-              <p className=" font-poppins text-white">
-                {coffee.weight} gram
+              <p className=" font-poppins text-white">From: {coffee.region}</p>
+              <p className="font-poppins text-white">
+                {typeof coffee.flavor_profile === "string"
+                  ? coffee.flavor_profile.replace(/([a-z])([A-Z])/g, "$1 $2")
+                  :String(coffee.flavor_profile)
+                  }
               </p>
+              <p className=" font-poppins text-white">{coffee.weight} gram</p>
             </div>
           </div>
         ))}
