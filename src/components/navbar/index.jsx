@@ -170,6 +170,13 @@ export default function Navbar() {
           >
             Contact
           </a>
+          <a
+            href="/facility"
+            className="text-white text-2xl"
+            onClick={() => setSidebarOpen(false)}
+          >
+            Facility
+          </a>
         </div>
       </div>
     </>
