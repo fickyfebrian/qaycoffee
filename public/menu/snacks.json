@@ -1,0 +1,45 @@
+{
+    "category": "Snack Series",
+    "items": [
+      {
+        "name": "French Fries",
+        "description": "Crispy, golden-brown potato sticks",
+        "price": "10"
+      },
+      {
+        "name": "Onion Rings",
+        "description": "Crispy onion rings battered and fried",
+        "price": "12"
+      },
+      {
+        "name": "Nachos",
+        "description": "Tortilla chips topped with cheese, salsa, and sour cream",
+        "price": "15"
+      },
+      {
+        "name": "Buffalo Wings",
+        "description": "Chicken wings coated in a spicy buffalo sauce",
+        "price": "18"
+      },
+      {
+        "name": "Mozzarella Sticks",
+        "description": "Breaded mozzarella cheese sticks, deep-fried",
+        "price": "12"
+      },
+      {
+        "name": "Garlic Bread",
+        "description": "Bread topped with garlic butter and herbs",
+        "price": "8"
+      },
+      {
+        "name": "Pretzels",
+        "description": "Soft pretzels with salt",
+        "price": "6"
+      },
+      {
+        "name": "Jalapeño Poppers",
+        "description": "Jalapeno peppers stuffed with cheese and breaded",
+        "price": "15"
+      }
+    ]
+  }

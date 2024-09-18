@@ -1,0 +1,40 @@
+{
+    "category": "Indonesian Main Courses",
+    "items": [
+      {
+        "name": "Nasi Goreng",
+        "description": "Indonesian fried rice, a flavorful dish made with fried rice, vegetables, and various seasonings.",
+        "price": "15"
+      },
+      {
+        "name": "Rendang",
+        "description": "Rendang is a rich and flavorful Indonesian beef stew cooked in coconut milk and spices.",
+        "price": "25"
+      },
+      {
+        "name": "Sate Ayam",
+        "description": "Chicken satay, grilled skewers of marinated chicken served with peanut sauce.",
+        "price": "20"
+      },
+      {
+        "name": "Bakso",
+        "description": "Bakso is a popular Indonesian meatball soup.",
+        "price": "18"
+      },
+      {
+        "name": "Soto Ayam",
+        "description": "Soto ayam is a clear chicken noodle soup.",
+        "price": "16"
+      },
+      {
+        "name": "Mie Goreng",
+        "description": "Mie goreng is a stir-fried noodle dish.",
+        "price": "15"
+      },
+      {
+        "name": "Gado-gado",
+        "description": "Gado-gado is a traditional Indonesian salad with peanut sauce.",
+        "price": "18"
+      }
+    ]
+  }

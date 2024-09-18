@@ -1,0 +1,40 @@
+{
+    "category": "Western Series",
+    "items": [
+      {
+        "name": "Classic Cheeseburger",
+        "description": "A juicy beef patty topped with cheese, lettuce, tomato, onion, pickles, and mayonnaise on a toasted bun",
+        "price": "25"
+      },
+      {
+        "name": "Spaghetti Bolognese",
+        "description": "A hearty pasta dish with a meat-based sauce",
+        "price": "22"
+      },
+      {
+        "name": "Chicken Parmesan",
+        "description": "Breaded chicken breast topped with marinara sauce and mozzarella cheese",
+        "price": "24"
+      },
+      {
+        "name": "Fish and Chips",
+        "description": "Battered and fried fish served with french fries",
+        "price": "23"
+      },
+      {
+        "name": "Steak and Fries",
+        "description": "Grilled steak served with french fries and a side salad",
+        "price": "30"
+      },
+      {
+        "name": "Lasagna",
+        "description": "Layered pasta sheets filled with meat sauce and cheese",
+        "price": "26"
+      },
+      {
+        "name": "Chicken Pot Pie",
+        "description": "A savory pie filled with chicken, vegetables, and gravy",
+        "price": "28"
+      }
+    ]
+  }

@@ -1,0 +1,30 @@
+{
+    "category": "Bread Series",
+    "items": [
+      {
+        "name": "Classic French Bread",
+        "description": "A long, crusty loaf of bread with a chewy interior",
+        "price": "15"
+      },
+      {
+        "name": "Whole Wheat Bread",
+        "description": "A nutritious bread made with whole wheat flour",
+        "price": "18"
+      },
+      {
+        "name": "Sourdough Bread",
+        "description": "Tangy bread with a distinctive flavor and texture",
+        "price": "20"
+      },
+      {
+        "name": "Italian Ciabatta",
+        "description": "A soft, airy bread with a chewy crust",
+        "price": "17"
+      },
+      {
+        "name": "Baguette",
+        "description": "A long, thin French bread with a crispy crust",
+        "price": "16"
+      }
+    ]
+  }
