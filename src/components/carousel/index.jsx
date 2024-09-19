@@ -4,7 +4,6 @@ import { EffectFade, Autoplay, Pagination } from 'swiper/modules';
 import "swiper/css";
 import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
-import './Carousel.css';  // Import custom CSS
 
 export default function Carousel() {
   const [images, setImages] = useState([]);

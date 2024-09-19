@@ -34,3 +34,41 @@ body{
     transform: translateY(0);
   }
 }
+/* Custom pagination styling */
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #ddd; /* Default bullet color */
+    opacity: 1;
+    border-radius: 15%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: #000; /* Color for active bullet */
+    transform: scale(1.2); /* Make active bullet larger */
+  }
+  
+  
+/* Styling scrollbar */
+::-webkit-scrollbar {
+  width: 6px; /* Set scrollbar width */
+}
+
+::-webkit-scrollbar:hover {
+  width: 12px; /* Set scrollbar width on hover */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Scrollbar track color */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #31363F; /* Scrollbar color */
+  border-radius: 2px; /* Make scrollbar rounded */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #31363F; /* Scrollbar color on hover */
+  width: 12px; /* Optional: adjust width on hover */
+}
