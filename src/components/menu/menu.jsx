@@ -1,91 +1,98 @@
-import React from "react";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function MenuHeader() {
+  const [activeSection, setActiveSection] = useState("drinks");
+
   return (
-    <div className="">
-      {/* Header Section */}
-      <div
-        className="flex h-auto w-full items-center justify-end px-24 py-24"
-        style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1610632380989-680fe40816c6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
-          backgroundSize: "110%",
-          backgroundPosition: "center",
-          height: "440px",
-        }}
-      >
-        <p className="font-playfair text-5xl text-white">Our Menu</p>
-      </div>
-
-      {/* Menu Section */}
-      <div className="relative mx-auto pt-28">
-        <div className="flex flex-col items-center justify-center">
-          {/* Drinks Section */}
-          <div className="text-5xl font-playfair px-12 pb-12">Drinks</div>
-          <div className="mt-4 border-t border-gray-300 pt-4 w-full max-w-[1700px] flex flex-col items-center">
-            <div className="py-2 flex flex-wrap justify-center gap-8 sm:gap-10 md:gap-24 lg:gap-40">
-              <a href="#cold" className="text-3xl font-poppins hover:uppercase">
-                Cold
-              </a>
-              <a href="#hot" className="text-3xl font-poppins hover:uppercase">
-                Hot
-              </a>
-              <a
-                href="#cocktails"
-                className="text-3xl font-poppins hover:uppercase"
-              >
-                Cocktails
-              </a>
-              <a
-                href="#smoothies"
-                className="text-3xl font-poppins hover:uppercase"
-              >
-                Smoothies
-              </a>
-              <a
-                href="#matcha"
-                className="text-3xl font-poppins hover:uppercase"
-              >
-                Matcha Series
-              </a>
-            </div>
-          </div>
-
-          {/* Food Section */}
-          <div className="text-5xl font-playfair px-12 pt-28 pb-12">Food</div>
-          <div className="mt-4 border-t border-gray-300 pt-4 w-full max-w-[1700px] flex flex-col items-center">
-            <div className="py-2 flex flex-wrap justify-center gap-8 sm:gap-10 md:gap-24 lg:gap-40">
-              <a
-                href="#bread"
-                className="text-3xl font-poppins hover:uppercase"
-              >
-                Breads
-              </a>
-              <a
-                href="#indonesian"
-                className="text-3xl font-poppins hover:uppercase"
-              >
-                Indonesian
-              </a>
-              <a
-                href="#western"
-                className="text-3xl font-poppins hover:uppercase"
-              >
-                Western
-              </a>
-              <a
-                href="#desserts"
-                className="text-3xl font-poppins hover:uppercase"
-              >
-                Desserts
-              </a>
-              <a href="#snacks" className="text-3xl font-poppins hover:uppercase">
-                Snacks
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div className="bg-black text-white min-h-screen">
+      <HeroSection />
+      <MenuNavigation 
+        activeSection={activeSection} 
+        setActiveSection={setActiveSection} 
+      />
     </div>
   );
 }
+
+const HeroSection = () => (
+  <motion.div 
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 1 }}
+    className="relative h-[60vh] flex items-center justify-center"
+  >
+    <div 
+      className="absolute inset-0 bg-cover bg-center opacity-50"
+      style={{
+        backgroundImage: "url('https://images.unsplash.com/photo-1610632380989-680fe40816c6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+      }}
+    />
+    <h1 className="relative z-10 font-playfair text-5xl md:text-7xl text-white">
+      Our Menu
+    </h1>
+  </motion.div>
+);
+
+const MenuNavigation = ({ activeSection, setActiveSection }) => {
+  const sections = {
+    drinks: ["Cold", "Hot", "Cocktails", "Smoothies", "Matcha"],
+    food: ["Bread", "Indonesian", "Western", "Desserts", "Snacks"],
+  };
+
+  return (
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="flex justify-center space-x-8 mb-12">
+        <TabButton 
+          active={activeSection === "drinks"} 
+          onClick={() => setActiveSection("drinks")}
+        >
+          Drinks
+        </TabButton>
+        <TabButton 
+          active={activeSection === "food"} 
+          onClick={() => setActiveSection("food")}
+        >
+          Food
+        </TabButton>
+      </div>
+      
+      <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8"
+      >
+        {sections[activeSection].map((item) => (
+          <CategoryButton key={item} href={`#${item.toLowerCase().replace(" ", "-")}`}>
+            {item}
+          </CategoryButton>
+        ))}
+      </motion.div>
+    </div>
+  );
+};
+
+const TabButton = ({ children, active, onClick }) => (
+  <motion.button
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+    className={`text-2xl sm:text-3xl font-playfair px-4 py-2 rounded-md transition-colors ${
+      active ? "bg-white text-black" : "text-white hover:bg-white/10"
+    }`}
+    onClick={onClick}
+  >
+    {children}
+  </motion.button>
+);
+
+const CategoryButton = ({ children, href }) => (
+  <motion.a
+    href={href}
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+    className="text-lg sm:text-xl font-poppins text-center py-2 px-4 border border-white/20 rounded-lg hover:bg-white/10 transition-colors"
+  >
+    {children}
+  </motion.a>
+);
